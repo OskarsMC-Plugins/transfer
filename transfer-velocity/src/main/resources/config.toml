@@ -1,0 +1,22 @@
+# ==== TransferVelocity ====
+# You may also use the same jar file on spigot.
+# Disabling the plugin on velocity will not disable it on spigot.
+[plugin]
+enabled=true
+
+# Messages
+[messages]
+    # MiniMessage formatted string:
+    # Link: https://docs.adventure.kyori.net/minimessage.html#format
+    # Placeholders: <player>, <old_server>, <new_server>
+    quit-message-new-server="<yellow><player> left <old_server> and joined <new_server>.</yellow>"
+    quit-message="<yellow><player> left the game</yellow>"
+
+# Servers
+[servers]
+    # Disabled servers
+    quit-message-disabled = ["new-quit-messages-wont-show-in-this-server", "or-in-this-one"]
+
+
+[developer-info]
+config-version=0.1

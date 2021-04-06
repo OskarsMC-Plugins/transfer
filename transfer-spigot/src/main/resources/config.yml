@@ -1,0 +1,4 @@
+# ==== TransferSpigot ====
+# You may also use the same jar file on velocity.
+# Disabling the plugin on spigot will not disable it on velocity.
+plugin-enabled: true

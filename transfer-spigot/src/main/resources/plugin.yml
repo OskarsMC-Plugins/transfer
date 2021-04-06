@@ -1,0 +1,8 @@
+name: transfer
+version: ${project.version}
+main: com.oskarsmc.transfer.TransferSpigot
+api-version: 1.13
+prefix: transfer
+authors: [ OskarsMC, OskarZyg ]
+description: Move quit Messages to Velocity
+website: https://software.oskarsmc.com/
