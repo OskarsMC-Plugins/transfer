@@ -17,8 +17,8 @@ jobs:
           java-version: 1.11
       - run: mvn -B package --file pom.xml # Build
       - run: mkdir staging
-      - run: transfer-spigot/target/*.jar staging # Move files
-      - run: transfer-velocity/target/*.jar staging # Move files
+      - run: cp transfer-spigot/target/*.jar staging # Move files
+      - run: cp transfer-velocity/target/*.jar staging # Move files
       - uses: actions/upload-artifact@v2 # Upload
         with:
           name: message
