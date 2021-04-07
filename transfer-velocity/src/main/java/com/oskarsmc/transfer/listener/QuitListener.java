@@ -52,7 +52,7 @@ public class QuitListener {
             placeholders.put("old_server", registeredServer.getServerInfo().getName());
             placeholders.put("new_server", "");
 
-            registeredServer.sendMessage(miniMessage.parse(transferSettings.getNewServerQuitMiniMessage(), placeholders));
+            registeredServer.sendMessage(miniMessage.parse(transferSettings.getServerQuitMiniMessage(), placeholders));
         }
     }
 }
