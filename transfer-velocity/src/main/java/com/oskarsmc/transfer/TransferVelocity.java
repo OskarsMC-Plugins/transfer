@@ -2,6 +2,7 @@ package com.oskarsmc.transfer;
 
 import com.google.inject.Inject;
 import com.oskarsmc.transfer.configuration.TransferSettings;
+import com.oskarsmc.transfer.listener.QuitListener;
 import com.oskarsmc.transfer.util.VersionUtils;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.event.Subscribe;
@@ -46,7 +47,7 @@ public class TransferVelocity {
         }
 
         if (transferSettings.isEnabled()) {
-
+            this.proxyServer.getEventManager().register(this, new QuitListener(this.transferSettings));
         }
     }
 }
