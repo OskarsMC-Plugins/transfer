@@ -7,7 +7,7 @@ enabled=true
 # Messages
 [messages]
     # MiniMessage formatted string:
-    # Link: https://docs.adventure.kyori.net/minimessage.html#format
+    # Link: https://docs.adventure.kyori.net/minimessage/format
     # Placeholders: <player>, <old_server>, <new_server>
     quit-message-new-server="<yellow><player> left <old_server> and joined <new_server>.</yellow>"
     quit-message="<yellow><player> left the game</yellow>"
